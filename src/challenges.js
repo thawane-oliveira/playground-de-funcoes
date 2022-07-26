@@ -1,12 +1,12 @@
 // Desafio 1
 
-function compareTrue(animal1, animal2) {
-  if (animal1 === true && animal2 === true) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function compareTrue(animal1, animal2) {
+//   if (animal1 === true && animal2 === true) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 // // Desafio 2
 
@@ -19,17 +19,17 @@ function compareTrue(animal1, animal2) {
 
 // // Desafio 3
 
-function splitSentence(array) {
-   let frase = array.split(" ", array.length);
-   return frase;
-} 
+// function splitSentence(array) {
+//    let frase = array.split(" ", array.length);
+//    return frase;
+// } 
 
 // // Desafio 4
 
-// function concatName(lista) {
-//   let array = lista[lista.length [-1]] + lista[lista.length [0]];
-// return array 
-// } console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+function concatName(lista) {
+  let array = lista[lista.length -1] + ', ' + lista[0];
+return array; 
+} 
 
 // // Desafio 5
 
@@ -39,7 +39,8 @@ function splitSentence(array) {
 // } console.log(footballPoints(14, 8));
 
 // // Desafio 6
-// function highestCount() {
+// function highestCount(numeros) {
+//   let maior = 
 // }
 
 // // Desafio 7
@@ -69,12 +70,12 @@ module.exports = {
   // calcArea,
 //   catAndMouse,
   // compareTrue,
-  // concatName,
+  concatName,
 //   decode,
 //   encode,
 //   fizzBuzz,
   // footballPoints,
 //   highestCount,
-  splitSentence,
+  // splitSentence,
 //   techList,
 };
