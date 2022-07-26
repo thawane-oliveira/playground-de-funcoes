@@ -3,7 +3,7 @@
 // const elefante = true;
 // const macaco = false;
 
-// function compareTrue(animal1, animal2) {
+// function compareTrue(girafa, macaco) {
 //   if (animal1, animal2 === false && animal1 & animal2 !== true) {
 //     return false;
 //   } console.log(false);
@@ -11,17 +11,21 @@
 
 // // Desafio 2
 
-let area = 0;
+// let area = 0;
 
-function calcArea(base, height) {
-  let area = base * height / 2; 
-  return area;
-} 
+// function calcArea(base, height) {
+//   let area = base * height / 2; 
+//   return area;
+// } 
 
 // // Desafio 3
-// function splitSentence() {
-//   // seu código aqui
-// }
+
+// let string = '';
+
+// function splitSentence(go, Trybe) {
+//   let string = string.split('').reverse().join('');
+//   return string + ' , '; 
+// } console.log(splitSentence('go Trybe'));
 
 // // Desafio 4
 // function concatName() {
@@ -29,9 +33,12 @@ function calcArea(base, height) {
 // }
 
 // // Desafio 5
-// function footballPoints() {
-//   // seu código aqui
-// }
+
+
+function footballPoints(wins, ties) {
+  let pontosTotais = wins * 3 + ties;
+  return pontosTotais;
+} console.log(footballPoints(14, 8));
 
 // // Desafio 6
 // function highestCount() {
@@ -62,15 +69,15 @@ function calcArea(base, height) {
 // }
 
 module.exports = {
-  calcArea,
+  // calcArea,
 //   catAndMouse,
 //   compareTrue,
 //   concatName,
 //   decode,
 //   encode,
 //   fizzBuzz,
-//   footballPoints,
+  footballPoints,
 //   highestCount,
-//   splitSentence,
+  // splitSentence,
 //   techList,
 };
