@@ -87,9 +87,9 @@ function techList(tecnologia, nome) {
   for (let index = 0; index < tecnologia.length; index += 1) {
     objeto.push({
       tech: tecnologia[index],
-      name: nome});
-  } 
-  return objeto
+      name: nome });
+  }
+  return objeto;
 }
 
 module.exports = {
