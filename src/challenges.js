@@ -1,13 +1,12 @@
 // Desafio 1
-// const girafa = true;
-// const elefante = true;
-// const macaco = false;
 
-// function compareTrue(girafa, macaco) {
-//   if (animal1, animal2 === false && animal1 & animal2 !== true) {
-//     return false;
-//   } console.log(false);
-// }
+function compareTrue(animal1, animal2) {
+  if (animal1 === true && animal2 === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // // Desafio 2
 
@@ -34,11 +33,10 @@
 
 // // Desafio 5
 
-
-function footballPoints(wins, ties) {
-  let pontosTotais = wins * 3 + ties;
-  return pontosTotais;
-} console.log(footballPoints(14, 8));
+// function footballPoints(wins, ties) {
+//   let pontosTotais = wins * 3 + ties;
+//   return pontosTotais;
+// } console.log(footballPoints(14, 8));
 
 // // Desafio 6
 // function highestCount() {
@@ -71,12 +69,12 @@ function footballPoints(wins, ties) {
 module.exports = {
   // calcArea,
 //   catAndMouse,
-//   compareTrue,
+  // compareTrue,
 //   concatName,
 //   decode,
 //   encode,
 //   fizzBuzz,
-  footballPoints,
+  // footballPoints,
 //   highestCount,
   // splitSentence,
 //   techList,
