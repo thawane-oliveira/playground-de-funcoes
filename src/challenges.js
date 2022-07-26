@@ -1,42 +1,42 @@
 // Desafio 1
 
-// function compareTrue(animal1, animal2) {
-//   if (animal1 === true && animal2 === true) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+function compareTrue(animal1, animal2) {
+  if (animal1 === true && animal2 === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // // Desafio 2
 
-// let area = 0;
+let area = 0;
 
-// function calcArea(base, height) {
-//   let area = base * height / 2; 
-//   return area;
-// } 
+function calcArea(base, height) {
+  let area = base * height / 2; 
+  return area;
+} 
 
 // // Desafio 3
 
-// function splitSentence(array) {
-//    let frase = array.split(" ", array.length);
-//    return frase;
-// } 
+function splitSentence(array) {
+   let frase = array.split(" ", array.length);
+   return frase;
+} 
 
 // // Desafio 4
 
-// function concatName(lista) {
-//   let array = lista[lista.length -1] + ', ' + lista[0];
-// return array; 
-// } 
+function concatName(lista) {
+  let array = lista[lista.length -1] + ', ' + lista[0];
+return array; 
+} 
 
 // // Desafio 5
 
-// function footballPoints(wins, ties) {
-//   let pontosTotais = wins * 3 + ties;
-//   return pontosTotais;
-// } console.log(footballPoints(14, 8));
+function footballPoints(wins, ties) {
+  let pontosTotais = wins * 3 + ties;
+  return pontosTotais;
+} console.log(footballPoints(14, 8));
 
 // // Desafio 6
 function highestCount(numeros) {
@@ -58,44 +58,45 @@ function highestCount(numeros) {
 }
 
 // // Desafio 7
-// function catAndMouse(mouse, cat1, cat2) {
-//   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
-//     return 'cat1'; 
-//   } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
-//     return 'cat2';
-//   } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
-//     return 'os gatos trombam e o rato foge';
-//   }
-//  } 
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1'; 
+  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+    return 'cat2';
+  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
+    return 'os gatos trombam e o rato foge';
+  }
+ } 
 
 // // Desafio 8
-// function fizzBuzz() {
-//   // seu código aqui
-// }
+function fizzBuzz() {
+  // seu código aqui
+}
 
 // // Desafio 9
-// function encode() {
-//   // seu código aqui
-// }
-// function decode() {
-//   // seu código aqui
-// }
+function encode() {
+  // seu código aqui
+}
+
+function decode() {
+  // seu código aqui
+}
 
 // // Desafio 10
-// function techList() {
-//   // seu código aqui
-// }
+function techList() {
+  // seu código aqui
+}
 
 module.exports = {
-  // calcArea,
-  // catAndMouse,
-  // compareTrue,
-  // concatName,
-//   decode,
-//   encode,
-//   fizzBuzz,
-  // footballPoints,
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
   highestCount,
-  // splitSentence,
-//   techList,
+  splitSentence,
+  techList,
 };
