@@ -26,10 +26,10 @@
 
 // // Desafio 4
 
-function concatName(lista) {
-  let array = lista[lista.length -1] + ', ' + lista[0];
-return array; 
-} 
+// function concatName(lista) {
+//   let array = lista[lista.length -1] + ', ' + lista[0];
+// return array; 
+// } 
 
 // // Desafio 5
 
@@ -39,14 +39,33 @@ return array;
 // } console.log(footballPoints(14, 8));
 
 // // Desafio 6
-// function highestCount(numeros) {
-//   let maior = 
-// }
+function highestCount(numeros) {
+  let maior = numeros[0];
+  let numeroDeVezes = 0;
+
+  for (let index = 1; index < numeros.length; index += 1) {
+    if (numeros[index] > maior) {
+      maior = numeros[index]
+    }
+  }
+  for (let index2 = 0; index2 < numeros.length; index2 += 1); {
+    if (maior === numeros[index2]) {
+      numeroDeVezes += 1 
+} 
+}
+return maior
+}
 
 // // Desafio 7
-// function catAndMouse() {
-//   // seu código aqui
-// }
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1'; 
+  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+    return 'cat2';
+  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
+    return 'os gatos trombam e o rato foge';
+  }
+ } 
 
 // // Desafio 8
 // function fizzBuzz() {
@@ -68,14 +87,14 @@ return array;
 
 module.exports = {
   // calcArea,
-//   catAndMouse,
+  catAndMouse,
   // compareTrue,
-  concatName,
+  // concatName,
 //   decode,
 //   encode,
 //   fizzBuzz,
   // footballPoints,
-//   highestCount,
+  highestCount,
   // splitSentence,
 //   techList,
 };
