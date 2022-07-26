@@ -43,29 +43,30 @@ function highestCount(numeros) {
   let maior = numeros[0];
   let numeroDeVezes = 0;
 
-  for (let index = 1; index < numeros.length; index += 1) {
+
+  for (let index = 0; index < numeros.length; index += 1) {
     if (numeros[index] > maior) {
-      maior = numeros[index]
+      maior = numeros[index];
     }
   }
-  for (let index2 = 0; index2 < numeros.length; index2 += 1); {
+  for (let index2 = 0; index2 < numeros.length; index2 += 1) {
     if (maior === numeros[index2]) {
       numeroDeVezes += 1 
-} 
-}
-return maior
+    } 
+  }
+  return numeroDeVezes
 }
 
 // // Desafio 7
-function catAndMouse(mouse, cat1, cat2) {
-  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
-    return 'cat1'; 
-  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
-    return 'cat2';
-  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
-    return 'os gatos trombam e o rato foge';
-  }
- } 
+// function catAndMouse(mouse, cat1, cat2) {
+//   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+//     return 'cat1'; 
+//   } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+//     return 'cat2';
+//   } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
+//     return 'os gatos trombam e o rato foge';
+//   }
+//  } 
 
 // // Desafio 8
 // function fizzBuzz() {
@@ -87,7 +88,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 module.exports = {
   // calcArea,
-  catAndMouse,
+  // catAndMouse,
   // compareTrue,
   // concatName,
 //   decode,
