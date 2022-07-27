@@ -23,7 +23,8 @@ function splitSentence(array) {
 // // Desafio 4
 
 function concatName(lista) {
-  let array = lista[lista.length - 1] + ', ' + lista[0];
+  // let array = lista[lista.length - 1] + ', ' + lista[0];
+  let array = `${lista[lista.length - 1]}, ${lista[0]}`;
   return array;
 }
 
@@ -56,11 +57,11 @@ function highestCount(numeros) {
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
-  } else if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
-    return 'cat2';
-  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
-    return 'os gatos trombam e o rato foge';
   }
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // // Desafio 8
