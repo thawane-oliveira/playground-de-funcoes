@@ -82,12 +82,31 @@ function fizzBuzz(array) {
 }
 
 // // Desafio 9
-function encode() {
-  // seu código aqui
-}
+function encode(string) {
+  const code = {
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
+  };
+  for (let key in code) {
+    if (string[index] === key) {
+      newPhrase = string.replace(string[index], code[key]);
+      }
+    } return newPhrase;
+  } 
 
-function decode() {
-  // seu código aqui
+
+function decode(string2) {
+  // const letraToNumber = {
+  //   1: 'a',
+  //   2: 'b',
+  //   3: 'c',
+  //   4: 'd',
+  //   5: 'e',
+  // };
+
 }
 
 // // Desafio 10
