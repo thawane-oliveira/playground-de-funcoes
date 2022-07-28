@@ -83,6 +83,8 @@ function fizzBuzz(array) {
 
 // // Desafio 9
 function encode(string) {
+  let index = 0;
+  let newPhrase = '';
   const code = {
     a: '1',
     e: '2',
@@ -93,10 +95,9 @@ function encode(string) {
   for (let key in code) {
     if (string[index] === key) {
       newPhrase = string.replace(string[index], code[key]);
-      }
-    } return newPhrase;
-  } 
-
+    }
+  } return newPhrase;
+}
 
 function decode(string2) {
   // const letraToNumber = {
