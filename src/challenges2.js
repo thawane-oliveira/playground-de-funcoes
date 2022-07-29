@@ -1,9 +1,5 @@
 // Desafio 11
 function generatePhoneNumber(numeros) {
-  // let maisRepetido = numeros[0];
-  // let numeroDeVezesMaisRepetido = 0;
-  // let numeroAtual = 0;
-  // let numeroAtualRepeticoes = 0;
   if (numeros.length !== 11) {
     return 'Array com tamanho incorreto.';
   }

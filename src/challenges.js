@@ -83,31 +83,21 @@ function fizzBuzz(array) {
 
 // // Desafio 9
 function encode(string) {
-  let index = 0;
-  let newPhrase = '';
-  const code = {
-    a: '1',
-    e: '2',
-    i: '3',
-    o: '4',
-    u: '5',
-  };
-  for (let key in code) {
-    if (string[index] === key) {
-      newPhrase = string.replace(string[index], code[key]);
-    }
-  } return newPhrase;
+  string = string.replace(/a/g, '1');
+  string = string.replace(/e/g, '2');
+  string = string.replace(/i/g, '3');
+  string = string.replace(/o/g, '4');
+  string = string.replace(/u/g, '5');
+  return string;
 }
 
-function decode(string2) {
-  // const letraToNumber = {
-  //   1: 'a',
-  //   2: 'b',
-  //   3: 'c',
-  //   4: 'd',
-  //   5: 'e',
-  // };
-
+function decode(string) {
+  string = string.replace(/1/g, 'a');
+  string = string.replace(/2/g, 'e');
+  string = string.replace(/3/g, 'i');
+  string = string.replace(/4/g, 'o');
+  string = string.replace(/5/g, 'u');
+  return string;
 }
 
 // // Desafio 10
